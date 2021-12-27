@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20211227165929">
     <title>Профиль</title>
 </head>
 
@@ -68,11 +68,15 @@
 
         <aside class="sidebar">
             <div class="sidebar__header">
-                <img src="images/sidebar-header.jpg" alt="">
+                <picture>
+                    <source srcset="images/sidebar-header.webp" type="image/webp"><img src="images/sidebar-header.jpg" alt="">
+                </picture>
             </div>
             <div class="sidebar__content">
                 <div class="sidebar__user">
-                    <img class="sidebar__user-photo" src="images/user-photo.png" alt="Михаил Шабров">
+                    <picture>
+                        <source srcset="images/user-photo.webp" type="image/webp"><img class="sidebar__user-photo" src="images/user-photo.png" alt="Михаил Шабров">
+                    </picture>
                     <div class="sidebar__user-info">
                         <h1 class="sidebar__user-name">Михаил Шабров</h1>
                         <div class="sidebar__user-text">блог front-end разработчика</div>
@@ -93,10 +97,7 @@
                 <nav class="nav  nav--mobile">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Статьи
-                                <span class="nav__arrow arrow" id="arrow"></span>
-                            </a>
+                            <a class="nav__link" href="#">Статьи</a>
 
                             <ul class="nav__sublist">
                                 <li class="nav__subitem">
@@ -111,22 +112,7 @@
                             </ul>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Обо мне
-                                <span class="nav__arrow arrow" id="arrow"></span>
-                            </a>
-
-                            <ul class="nav__sublist">
-                                <li class="nav__subitem">
-                                    <a class="nav__sublink" href="#">Создание сайтов</a>
-                                </li>
-                                <li class="nav__subitem">
-                                    <a class="nav__sublink" href="#">Интернет-маркетинг</a>
-                                </li>
-                                <li class="nav__subitem">
-                                    <a class="nav__sublink" href="#">Продвижение видео</a>
-                                </li>
-                            </ul>
+                            <a class="nav__link" href="#">Обо мне</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#">Реклама</a>
@@ -241,12 +227,12 @@
 
     <div class="modal" id="modal-story">
         <div class="modal__content  modal__content--story">
-            <video class="modal__story" src="" poster="http://placehold.it/450x600"></video>
+            <!-- <video class="modal__story" src="" poster="images/"></video> -->
         </div>
     </div>
 
     <!-- JabaScript -->
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js?_v=20211227165929"></script>
 
 </body>
 
