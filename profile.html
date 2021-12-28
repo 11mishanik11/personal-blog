@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20211227165929">
+    <link rel="stylesheet" href="css/style.min.css?_v=20211228234919">
     <title>Профиль</title>
 </head>
 
@@ -19,28 +19,28 @@
                             <a class="nav__link" href="index.html">Главная</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">
+                            <span class="nav__link  padding-right-arrow" href="#">
                                 Статьи
                                 <span class="nav__arrow arrow" id="arrow"></span>
-                            </a>
+                            </span>
 
                             <ul class="nav__sublist">
                                 <li class="nav__subitem">
-                                    <a class="nav__sublink" href="#">Создание сайтов</a>
+                                    <a class="nav__sublink" href="text-page.html">Создание сайтов</a>
                                 </li>
                                 <li class="nav__subitem">
-                                    <a class="nav__sublink" href="#">Интернет-маркетинг</a>
+                                    <a class="nav__sublink" href="text-page.html">Интернет-маркетинг</a>
                                 </li>
                                 <li class="nav__subitem">
-                                    <a class="nav__sublink" href="#">Продвижение видео</a>
+                                    <a class="nav__sublink" href="text-page.html">Продвижение видео</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Обо мне</a>
+                            <a class="nav__link" href="text-page.html">Обо мне</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Реклама</a>
+                            <a class="nav__link" href="text-page.html">Реклама</a>
                         </li>
                     </ul>
                 </nav>
@@ -97,28 +97,31 @@
                 <nav class="nav  nav--mobile">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Статьи</a>
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <span class="nav__link" href="#">Статьи</span>
 
                             <ul class="nav__sublist">
                                 <li class="nav__subitem">
-                                    <a class="nav__sublink" href="#">Создание сайтов</a>
+                                    <a class="nav__sublink" href="text-page.html">Создание сайтов</a>
                                 </li>
                                 <li class="nav__subitem">
-                                    <a class="nav__sublink" href="#">Интернет-маркетинг</a>
+                                    <a class="nav__sublink" href="text-page.html">Интернет-маркетинг</a>
                                 </li>
                                 <li class="nav__subitem">
-                                    <a class="nav__sublink" href="#">Продвижение видео</a>
+                                    <a class="nav__sublink" href="text-page.html">Продвижение видео</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Обо мне</a>
+                            <a class="nav__link" href="text-page.html">Обо мне</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Реклама</a>
+                            <a class="nav__link" href="text-page.html">Реклама</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Профиль</a>
+                            <a class="nav__link" href="text-page.html">Профиль</a>
                         </li>
                     </ul>
                 </nav>
@@ -190,7 +193,7 @@
                     <span class="form__line"></span>
                 </div>
                 <div class="form__group">
-                    <textarea class="form__field  form__field--textarea" name="contactText" placeholder="Текст сообщения"></textarea>
+                    <textarea class="form__field  form__field--textarea" name="contactText" placeholder="Текст сообщения" data-textarea></textarea>
                     <span class="form__line"></span>
                 </div>
                 <div class="form__footer">
@@ -236,12 +239,16 @@
 
     <div class="modal" id="modal-story">
         <div class="modal__content  modal__content--story">
-            <video class="modal__story" src="" poster="images/work-photo-1.webp"></video>
+            <video class="modal__story" id="modal-video" loop src="https://assets.mixkit.co/videos/preview/mixkit-waves-in-the-water-1164-large.mp4"></video>
+
+            <btn class="modal__btn-play" id="btnPlay">
+                <img src="images/arrow.svg" alt="">
+            </btn>
         </div>
     </div>
 
     <!-- JabaScript -->
-    <script src="js/app.min.js?_v=20211227165929"></script>
+    <script src="js/app.min.js?_v=20211228234919"></script>
 
 </body>
 
