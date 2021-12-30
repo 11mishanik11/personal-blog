@@ -483,7 +483,7 @@ body.show-sidebar {
 
 .add-post {
   margin-bottom: 3rem;
-  padding: 1.7rem 2rem 1.7rem 3rem;
+  padding: 1.7rem 2rem;
   background-color: #121212;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
   border-radius: 0.35em;
@@ -496,21 +496,23 @@ body.show-sidebar {
 
 .add-post__text {
   display: block;
-  flex-grow: 1;
-  height: 34px;
   overflow: hidden;
+  flex-grow: 1;
+  width: 100%;
+  height: 3rem;
+  margin: auto 0;
   border: none;
   background: none;
   resize: none;
   font-size: 1.5rem;
-  line-height: 2;
+  line-height: 1.5;
   color: #d2d2d2;
 }
 
 .add-post__actions {
-  width: 10rem;
   display: flex;
   justify-content: flex-end;
+  flex: 0 0 10rem;
 }
 
 .add-post__file,
@@ -1090,7 +1092,7 @@ body.show-sidebar {
 .modal__story {
   display: block;
   max-width: 100%;
-  height: 90vh;
+  max-height: 80vh;
   border-radius: 1rem;
 }
 
@@ -1304,6 +1306,28 @@ body.show-sidebar {
     margin-bottom: 3rem;
   }
 
+  .add-post__actions {
+    flex: 0 0 0.6rem;
+  }
+
+  .add-post__file,
+  .add-post__send {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .add-post__file img {
+    width: 60%;
+  }
+
+  .add-post__send img {
+    width: 50%;
+  }
+
+  .add-post {
+    padding: 1.5rem 1rem;
+  }
+
   .post:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -1372,6 +1396,10 @@ body.show-sidebar {
   }
 
   .modal__content {
+    max-width: none;
+  }
+
+  .modal__content:not(.modal__content--story) {
     padding: 6rem 3rem 3rem;
   }
 }
